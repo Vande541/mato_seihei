@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mato Seihei No Slave</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="main">
+        <div class="card_1">
+            <a href="./Images/">
+                <img src="./anime_poster.jpg" alt="anime_poster">
+                <span>Image R34</span>
+            </a>
+        </div>
+        <div class="card_2">
+            <img class = 'open_alert' src="./anime_poster.jpg" alt="Rule 34">
+            <span class="open">Anime</span>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var fimls = document.querySelectorAll('.card_2');
+    
+            // Lặp qua các phần tử ".card_2" và gắn sự kiện click cho mỗi phần tử
+            fimls.forEach(function(card) {
+                var span = card.querySelector('.open');
+                var img = card.querySelector('.open_alert')
+                span.addEventListener('click', function() {
+                    var check = prompt(`
+                        Nhập 1: TẬP 7
+                        Nhập 2: TẬP 10`);
+                    if (check == 1) {
+                        window.location.href = 'https://www.capcut.com/view/7345461671613170178?workspaceId=7320602918787383298';
+                    } else if (check == 2) {
+                        window.location.href = 'https://www.capcut.com/view/7345464964288610817?workspaceId=7320602918787383298';
+                    }
+                });
+                img.addEventListener('click', function() {
+                    var check = prompt(`
+                        Nhập 1: TẬP 7
+                        Nhập 2: TẬP 10`);
+                    if (check == 1) {
+                        window.location.href = 'https://www.capcut.com/view/7345461671613170178?workspaceId=7320602918787383298';
+                    } else if (check == 2) {
+                        window.location.href = 'https://www.capcut.com/view/7345464964288610817?workspaceId=7320602918787383298';
+                    }
+                });
+            });
+        });
+    </script>
+    
+</body>
+
+</html>
